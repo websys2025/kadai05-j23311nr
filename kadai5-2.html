@@ -14,7 +14,8 @@
     <script>
         async function some_api(myForm) {
             // ここにコードを書く
-            document.getElementById("result").innerHTML += myForm.form_data.value+"<br />";
+            const url = "http://robohash.org/"
+            document.getElementById("result").innerHTML += "<img src="+url+myForm.form_data.value+".png>"+"<br />";
             document.apiform.reset();
         }
     </script>
